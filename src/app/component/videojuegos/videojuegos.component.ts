@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'videojuegoComponent',
-    template: `
-        <h2> Componente de {{nombre}} </h2>
-        <h3 *ngIf="mostrarJuego != true"> Yo adoro a la {{amorMio}}</h3>
-        <h3 *ngIf="mostrarJuego"> El mejor juego es {{mejorVideojuego}}</h3>
-    `
+    templateUrl: './videojuegos.component.html'
 })
 
 export class VideojuegosComponent{
@@ -15,4 +11,11 @@ export class VideojuegosComponent{
     public amorMio = 'Dani';
     public mejorVideojuego = 'Starcraft';
     public mostrarJuego = false;
+
+    public listadoJuegos = [
+        'Doom 3',
+        'Quake 2',
+        'Starcraft',
+        'Dukenukem 3D'
+    ]
 }

@@ -1,0 +1,7 @@
+<h2> Componente de {{nombre}} </h2>
+<h3 *ngIf="mostrarJuego != true"> Yo adoro a la {{amorMio}}</h3>
+<h3 *ngIf="mostrarJuego"> El mejor juego es {{mejorVideojuego}}</h3>
+<h2> Listado Videojuegos </h2>
+<ul>
+    <li *ngFor="let game of listadoJuegos">{{game}}</li>
+</ul>
